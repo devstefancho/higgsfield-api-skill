@@ -5,7 +5,9 @@ A Claude Code skill for calling the [Higgsfield API](https://docs.higgsfield.ai)
 ## Install
 
 Copy the `higgsfield-api/` folder into your project's `.claude/skills/` (or `~/.claude/skills/`).
-Set your key as an environment variable (`HF_KEY=KEY_ID:KEY_SECRET`) or in a `.env` file. Never commit your key.
+Set your key with the environment variables `HF_API_KEY_ID` and `HF_API_KEY_SECRET`, or in `~/.secrets/higgsfield-api.json` as `{"key_id": "...", "key_secret": "..."}`. Never commit your key.
+
+Generated files and the request log go to `~/works/data/higgsfield/` (change `DATA_DIR` in `higgsfield-api/scripts/hfapi.py` if you want another place).
 
 ## Use
 
